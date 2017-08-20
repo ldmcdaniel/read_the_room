@@ -2,7 +2,8 @@
     "users": {
         "user0": {
             "uid": "user0",
-            "name": "Bob",
+            "avatar": "../assets/user.jpg",
+            "name": "Jane",
             "group": "sample",
             "answerPoints": 10,
             "askPoints": 5,
@@ -10,7 +11,8 @@
         },
         "user1": {
             "uid": "user1",
-            "name": "Jane",
+            "avatar": "../assets/user1.jpg",
+            "name": "Bob",
             "group": "sample",
             "answerPoints": 15,
             "askPoints": 12,
@@ -19,6 +21,7 @@
         "user2": {
             "uid": "user2",
             "name": "Joe",
+            "avatar": "../assets/user1.jpg",
             "group": "sample",
             "answerPoints": 15, 
             "askPoints": 5,
