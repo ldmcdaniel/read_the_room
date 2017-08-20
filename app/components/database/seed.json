@@ -427,7 +427,16 @@
             "qid": "question5",
             "userAnswer": "A"
         }
-
+    },
+    "tasks": {
+        "task0": {
+            "uid": "user0",
+            "answerId": "answer14"        
+        },
+        "task1": {
+            "uid": "user1",
+            "answerId": "answer25"        
+        }
     }     
     
 }
