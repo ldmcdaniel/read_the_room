@@ -1,13 +1,29 @@
 /* app css stylesheet */
 
-.menu {
+nav{
+  margin-bottom: 20px;
+
+}
+
+.navbar-item{
+  color: green;
+}
+
+.navbar-brand{
+  margin-top: 5px;
+}
+
+.navbar-brand img{
+  height: 50px;
+}
+/* .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
   margin-bottom: 2em;
   padding: 0 0 0.5em;
-}
+} */
 
-.menu:before {
+/* .menu:before {
   content: "[";
 }
 
@@ -22,4 +38,4 @@
 .menu > li + li:before {
   content: "|";
   padding-right: 0.3em;
-}
+} */
