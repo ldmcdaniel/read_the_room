@@ -1,1 +1,13 @@
-<p>Profile View Goes Here</p>
+<section class="section" ng-controller="ProfileCtrl">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-one-third profile-sidebar">
+      	<img ng-src="{{profile.avatar}}">
+      	<h2 class="title is-2 has-text-white">{{profile.name}}</h2>
+      	<h3 class="subtitle is-4 has-text-light">Points: {{profile.points}}</h3>
+      	<button class="button is-inverted">Create Question</button>
+      </div>
+      <div class="column profile-task-area">Questions are here</div>
+    </div>
+  </div>
+</section>

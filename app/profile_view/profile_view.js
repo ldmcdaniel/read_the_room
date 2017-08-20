@@ -9,6 +9,13 @@ angular.module('myApp.ProfileView', ['ngRoute'])
   });
 }])
 
-.controller('ProfileCtrl', [function() {
+.controller('ProfileCtrl', ['$scope', function($scope) {
+
+	$scope.profile = {};
+	$scope.profile.avatar = 'http://via.placeholder.com/300x300';
+	$scope.profile.name = 'John Doe';
+	$scope.profile.points = 42;
+
+	// console.log("what's scope", $scope);
 
 }]);
