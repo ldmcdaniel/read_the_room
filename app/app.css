@@ -19,7 +19,8 @@ nav{
 
 .profile-sidebar {
 	background-color: #363636;
-	text-align: center;
+  text-align: center;
+  height: 900px;
 }
 
 .profile-task-area {
