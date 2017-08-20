@@ -2,7 +2,6 @@
 
 nav{
   margin-bottom: 20px;
-
 }
 
 .navbar-item{
@@ -19,9 +18,22 @@ nav{
 
 .profile-sidebar {
 	background-color: #363636;
-	text-align: center;
+  text-align: center;
+  height: 900px;
 }
 
 .profile-task-area {
 	background-color: #D5D7D2;
+}
+
+.yellow {
+	color: yellow;
+}
+
+.green {
+	color: green;
+}
+
+.red {
+	color: red;
 }
