@@ -3,8 +3,8 @@
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
   'ngRoute',
-  'myApp.profileView',
-  'myApp.groupView',
+  'myApp.ProfileView',
+  'myApp.GroupView',
   'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
