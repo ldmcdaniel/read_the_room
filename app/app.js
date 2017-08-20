@@ -5,6 +5,7 @@ angular.module('myApp', [
   'ngRoute',
   'myApp.ProfileView',
   'myApp.GroupView',
+  'myApp.QuestionView',
   'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
