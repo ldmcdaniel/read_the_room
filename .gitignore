@@ -62,3 +62,7 @@ typings/
 
 # Constants
 fb-creds.js
+.DS_Store
+
+#Firebase API Key
+app/AppConstants.js

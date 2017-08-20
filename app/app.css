@@ -1,25 +1,27 @@
 /* app css stylesheet */
 
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+nav{
+  margin-bottom: 20px;
+
 }
 
-.menu:before {
-  content: "[";
+.navbar-item{
+  color: green;
 }
 
-.menu:after {
-  content: "]";
+.navbar-brand{
+  margin-top: 5px;
 }
 
-.menu > li {
-  display: inline;
+.navbar-brand img{
+  height: 50px;
 }
 
-.menu > li + li:before {
-  content: "|";
-  padding-right: 0.3em;
+.profile-sidebar {
+	background-color: #363636;
+	text-align: center;
+}
+
+.profile-task-area {
+	background-color: #D5D7D2;
 }

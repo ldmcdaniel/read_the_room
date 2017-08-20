@@ -15,21 +15,32 @@
   <body>
     <nav class="navbar">
       <div class="navbar-brand">
-        <a class="navbar-item" href="http://bulma.io">
-          <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/readtheroom.png" alt="Read the Room and Become a great team member!">
         </a>
-
-        <div class="navbar-burger">
-          <span></span>
-          <span></span>
-          <span></span>
+      </div>
+      <div class="navbar-start">
+         <a class="navbar-item" href="#!/profile_view">Profile</a>
+         <a class="navbar-item" href="#!/group_view">Group</a>
+      </div>
+          <!-- STRETCH GOALS -->
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="field is-grouped">
+            <p class="control">
+              <a class="bd-tw-button button" href="#">
+                <span>STRETCH</span>
+              </a>
+            </p>
+              <p class="control">
+                <a class="button is-dark" href="#">
+                  <span>GOAL</span>
+                </a>
+              </p>
+          </div>
         </div>
       </div>
     </nav>
-    <ul class="menu">
-      <li><a href="#!/profile_view">Profile</a></li>
-      <li><a href="#!/group_view">Group</a></li>
-    </ul>
     <div ng-view></div>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
@@ -37,6 +48,7 @@
     <script src="task_view/task_view.js"></script>
     <script src="profile_view/profile_view.js"></script>
     <script src="group_view/group_view.js"></script>
+    <script type="text/javascript" src="./app/AppConstants.js"></script>
     <script src="components/version/version.js"></script>
     <script src="components/version/version-directive.js"></script>
     <script src="components/version/interpolate-filter.js"></script>
