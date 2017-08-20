@@ -1,8 +1,19 @@
 /* app css stylesheet */
 
-nav{
-  margin-bottom: 20px;
 
+nav{
+  padding-bottom: 25px;
+  padding-top: 25px;
+  border-bottom: 1px solid #e3a000;
+  position: fixed !important; 
+  top: 0; 
+  left: 0; 
+  right: 0;
+  z-index: 10;
+}
+
+section{
+  margin-top: 110px;
 }
 
 .navbar-item{
@@ -17,14 +28,27 @@ nav{
   height: 50px;
 }
 
+a.button:hover{
+  background: #e15c47;
+  color: white;
+}
+
+a.is-focused{
+  background: #e15c47;
+  border: none;
+  color: white;
+}
+
 .profile-sidebar {
-	background-color: #363636;
+	background-color: #e15c47;
   text-align: center;
-  height: 900px;
+  border-radius: 5px;
+  /* height: 900px; */
 }
 
 .profile-task-area {
-	background-color: #D5D7D2;
+border: 1px solid #D5D7D2;
+margin-left: 10px;
 }
 
 .yellow {
