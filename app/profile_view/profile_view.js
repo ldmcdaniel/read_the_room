@@ -9,9 +9,25 @@ angular.module('myApp.ProfileView', ['ngRoute'])
   });
 }])
 .controller('ProfileCtrl', ['$scope', '$http', function($scope, $http) {
+
+	$scope.askingQuestions = 'answering';
+
 	$http.get ('https://readtheroom-6b306.firebaseio.com/users/user0.json')
 	.then ((userObj) => {
 	$scope.profile = userObj.data;
 	})
+
+	$scope.toggleQuestionView = () => {
+		if ($scope.askingQuestions === 'asking') {
+			$scope.askingQuestions = 'answering';
+		}	else if ($scope.askingQuestions === 'answering') {
+			$scope.askingQuestions = 'asking';
+		}
+	};
+
+	$scope.pts = () => {
+		$scope.profile.askPoints += 1;
+	};
+
 
 }]);
