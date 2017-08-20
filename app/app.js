@@ -1,12 +1,14 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', [
+var app = angular.module('myApp', [
   'ngRoute',
   'myApp.ProfileView',
   'myApp.GroupView',
   'myApp.TaskView',
   'myApp.version'
+  'myApp.QuestionView',
+  'myApp.version',
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
@@ -24,3 +26,4 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
   };
   firebase.initializeApp(authConfig);
 });
+}]);
