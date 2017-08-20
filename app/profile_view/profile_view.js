@@ -23,10 +23,11 @@ angular.module('myApp.ProfileView', ['ngRoute'])
 		}	else if ($scope.askingQuestions === 'answering') {
 			$scope.askingQuestions = 'asking';
 		}
-
 	};
 
-
+	$scope.pts = () => {
+		$scope.profile.askPoints += 1;
+	};
 
 
 }]);
