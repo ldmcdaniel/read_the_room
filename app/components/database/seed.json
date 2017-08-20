@@ -1,0 +1,433 @@
+{
+    "users": {
+        "user0": {
+            "uid": "user0",
+            "name": "Bob",
+            "group": "sample",
+            "answerPoints": 10,
+            "askPoints": 5,
+            "status": "yellow"
+        },
+        "user1": {
+            "uid": "user1",
+            "name": "Jane",
+            "group": "sample",
+            "answerPoints": 15,
+            "askPoints": 12,
+            "status": "green"
+        },
+        "user2": {
+            "uid": "user2",
+            "name": "Joe",
+            "group": "sample",
+            "answerPoints": 15, 
+            "askPoints": 5,
+            "status": "red"
+        }
+    },
+    "questions": {
+        "question0": {
+            "qid": "question0",
+            "creatorUID": "",
+            "questionString":"Your favorite super hero team",
+            "A": "Marvel",
+            "B": "DC",
+            "C": "None",
+            "answerOther": ""
+        },
+        "question1": {
+            "qid": "question1",
+            "creatorUID": "",
+            "questionString":"When it comes to problem solving I..",
+            "A": "Let someone else drive",
+            "B": "negotiate",
+            "C": "focus on what we can all agree on",
+            "D": "find a compromise",
+            "answerOther": ""
+        },
+        "question2": {
+            "qid": "question2",
+            "creatorUID": "",
+            "questionString":"When it comes to goal setting...",
+            "A": "I live in the day. Goals are too much of a commitment.",
+            "B": "I am firm in pursuit of my goals",
+            "C": "I don't have time for goals.",
+            "D": "I need to have goals?",
+            "answerOther": ""
+        },
+        "question3": {
+            "qid": "question3",
+            "creatorUID": "",
+            "questionString":"When I need help...",
+            "A": "I allow myself to struggle for a bit and then seek help",
+            "B": "Struggle hurts! I seek help immediately!",
+            "C": "Need help? I never need help.",
+            "D": "I have a hard time admitting I need help so I suffer in silence.",
+            "answerOther": ""
+        },
+        "question4": {
+            "qid": "question4",
+            "creatorUID": "",
+            "questionString":"Thinking about winning and losing...",
+            "A": "There is no losing! You either win or learn.",
+            "B": "There is no losing becasue winning is the ONLY option",
+            "C": "Losing hurts, but it doesn't really bother me.",
+            "D": "Huh? Doesn't everyone get a trophy?",
+            "answerOther": ""
+        },
+        "question5": {
+            "qid": "question5",
+            "creatorUID": "",
+            "questionString":"When opening up to others...",
+            "A": "I usually am really reserved because I am shy and afraid I will say something wrong",
+            "B": "I go for it. If they don't like it, oh well.",
+            "C": "I am reserved but as I get to know people, I tend to open up a lot.",
+            "D": "I don't open up...my business is my business.",
+            "answerOther": ""
+        },
+        "question6": {
+            "qid": "question6",
+            "creatorUID": "",
+            "questionString":"When people ask me questions to get to know me better I feel...",
+            "A": "Very uncomfortable. I don't like to be interrogated.",
+            "B": "Relieved that someone started the conversation first.",
+            "C": "OH MY GOD THEY ARE TALKING TO ME!",
+            "D": "I am usually the one who does all the asking.",
+            "answerOther": ""
+        },
+        "question7": {
+            "qid": "question7",
+            "creatorUID": "",
+            "questionString":"If you were to pick a fictional character, with whom would you say you most identify?",
+            "A": "Incredible Hulk",
+            "B": "Tony Stark/Iron Man",
+            "C": "Wonder Woman",
+            "D": "Sleeping Beauty",
+            "answerOther": ""
+        },
+        "question8": {
+            "qid": "question8",
+            "creatorUID": "",
+            "questionString":"If someone made a movie of your life it would be....",
+            "A": "a drama",
+            "B": "a comedy",
+            "C": "science fiction",
+            "D": "action film",
+            "answerOther": ""
+        },
+        "question9": {
+            "qid": "question9",
+            "creatorUID": "",
+            "questionString":"I am attending NSS becasue...",
+            "A": "I want a new professional focus",
+            "B": "Money, Money, Money!",
+            "C": "I wanted to try something new",
+            "D": "I love to learn and can't wait to see what happens when it is all over",
+            "answerOther": ""
+        },
+        "question10": {
+            "qid": "question10",
+            "creatorUID": "",
+            "questionString":"My ideal pet is...",
+            "A": "cat",
+            "B": "dog",
+            "C": "bird",
+            "D": "horse",
+            "answerOther": ""
+        },
+        "question11": {
+            "qid": "question11",
+            "creatorUID": "",
+            "questionString":"My favorite author is...",
+            "A": "JK Rowling",
+            "B": "Stephen King",
+            "C": "James Patterson",
+            "D": "William Shakespeare",
+            "answerOther": ""
+        },
+        "question12": {
+            "qid": "question12",
+            "creatorUID": "",
+            "questionString":"What was your favorite school subject",
+            "A": "Math",
+            "B": "Science",
+            "C": "English",
+            "D": "Lunch",
+            "answerOther": ""
+        },
+        "question13": {
+            "qid": "question13",
+            "creatorUID": "",
+            "questionString":"If money was not a concern what would you do every day if you didn’t work?",
+            "A": "Relax on the beach",
+            "B": "Climb mountains",
+            "C": "Start a new business",
+            "D": "Travel",
+            "answerOther": ""
+        },
+        "question14": {
+            "qid": "question14",
+            "creatorUID": "",
+            "questionString":"What's your favorite ice cream flavor?",
+            "A": "Chocolate",
+            "B": "Vanilla",
+            "C": "Strawberry",
+            "D": "Cookies & Cream",
+            "answerOther": ""
+        },
+        "question15": {
+            "qid": "question15",
+            "creatorUID": "",
+            "questionString":"What's your cleaning style?",
+            "A": "I complete a list of chores daily and weekly",
+            "B": "I never clean",
+            "C": "Only when company is coming",
+            "D": "I prefer to outsource",
+            "answerOther": ""
+        },
+        "question16": {
+            "qid": "question16",
+            "creatorUID": "",
+            "questionString":"What is your preferred learning style?",
+            "A": "Lecture",
+            "B": "Work-along examples",
+            "C": "Solitary practice and research",
+            "D": "I learn the most by teaching others",
+            "answerOther": ""
+        },
+        "question17": {
+            "qid": "question17",
+            "creatorUID": "",
+            "questionString":"If I could time travel...",
+            "A": "I would go to the future",
+            "B": "I would go to the past",
+            "C": "I would not want to!",
+            "D": "I would just keep reliving my favorite day",
+            "answerOther": ""
+        },
+        "question18": {
+            "qid": "question18",
+            "creatorUID": "",
+            "questionString":"Which person from history would you most like to meet?",
+            "A": "Albert Einstein",
+            "B": "George Washington",
+            "C": "William Shakespeare",
+            "D": "Walt Disney",
+            "answerOther": ""
+        },
+        "question19": {
+            "qid": "question19",
+            "creatorUID": "",
+            "questionString":"Is Pluto a planet?",
+            "A": "Of course!",
+            "B": "Pluto is no longer considered a planet. Get over it!",
+            "C": "I'm open to debate on that one.",
+            "D": "I really don't care.",
+            "answerOther": ""
+        }
+    },
+    "answers": {
+        "answer0": {
+            "uid": "user0",
+            "qid": "question1",
+            "userAnswer": "A"
+        },
+        "answer1": {
+            "uid": "user0",
+            "qid": "question2",
+            "userAnswer": "B"
+        },
+        "answer2": {
+            "uid": "user0",
+            "qid": "question3",
+            "userAnswer": "C"
+        },
+        "answer3": {
+            "uid": "user0",
+            "qid": "question4",
+            "userAnswer": "D"
+        },
+        "answer4": {
+            "uid": "user0",
+            "qid": "question5",
+            "userAnswer": "A"
+        },
+        "answer5": {
+            "uid": "user0",
+            "qid": "question6",
+            "userAnswer": "B"
+        },
+        "answer6": {
+            "uid": "user0",
+            "qid": "question7",
+            "userAnswer": "C"
+        },
+        "answer7": {
+            "uid": "user0",
+            "qid": "question8",
+            "userAnswer": "D"
+        },
+        "answer8": {
+            "uid": "user0",
+            "qid": "question9",
+            "userAnswer": "A"
+        },
+        "answer9": {
+            "uid": "user0",
+            "qid": "question10",
+            "userAnswer": "B"
+        },
+        "answer10": {
+            "uid": "user1",
+            "qid": "question1",
+            "userAnswer": "A"
+        },
+        "answer11": {
+            "uid": "user1",
+            "qid": "question2",
+            "userAnswer": "A"
+        },
+        "answer12": {
+            "uid": "user1",
+            "qid": "question4",
+            "userAnswer": "B"
+        },
+        "answer13": {
+            "uid": "user1",
+            "qid": "question5",
+            "userAnswer": "B"
+        },
+        "answer14": {
+            "uid": "user1",
+            "qid": "question7",
+            "userAnswer": "C"
+        },
+        "answer15": {
+            "uid": "user1",
+            "qid": "question8",
+            "userAnswer": "C"
+        },
+        "answer16": {
+            "uid": "user1",
+            "qid": "question10",
+            "userAnswer": "D"
+        },
+        "answer17": {
+            "uid": "user1",
+            "qid": "question11",
+            "userAnswer": "D"
+        },
+        "answer18": {
+            "uid": "user1",
+            "qid": "question12",
+            "userAnswer": "A"
+        },
+        "answer19": {
+            "uid": "user1",
+            "qid": "question14",
+            "userAnswer": "A"
+        },
+        "answer20": {
+            "uid": "user1",
+            "qid": "question15",
+            "userAnswer": "B"
+        },
+        "answer21": {
+            "uid": "user1",
+            "qid": "question17",
+            "userAnswer": "B"
+        },
+        "answer22": {
+            "uid": "user1",
+            "qid": "question18",
+            "userAnswer": "C"
+        },
+        "answer23": {
+            "uid": "user1",
+            "qid": "question19",
+            "userAnswer": "C"
+        },
+        "answer24": {
+            "uid": "user1",
+            "qid": "question16",
+            "userAnswer": "D"
+        },
+        "answer25": {
+            "uid": "user2",
+            "qid": "question1",
+            "userAnswer": "A"
+        },
+        "answer26": {
+            "uid": "user2",
+            "qid": "question3",
+            "userAnswer": "A"
+        },
+        "answer27": {
+            "uid": "user2",
+            "qid": "question4",
+            "userAnswer": "A"
+        },
+        "answer28": {
+            "uid": "user2",
+            "qid": "question6",
+            "userAnswer": "B"
+        },
+        "answer29": {
+            "uid": "user2",
+            "qid": "question7",
+            "userAnswer": "B"
+        },
+        "answer30": {
+            "uid": "user2",
+            "qid": "question9",
+            "userAnswer": "B"
+        },
+        "answer31": {
+            "uid": "user2",
+            "qid": "question10",
+            "userAnswer": "C"
+        },
+        "answer32": {
+            "uid": "user2",
+            "qid": "question12",
+            "userAnswer": "C"
+        },
+        "answer33": {
+            "uid": "user2",
+            "qid": "question13",
+            "userAnswer": "C"
+        },
+        "answer34": {
+            "uid": "user2",
+            "qid": "question15",
+            "userAnswer": "D"
+        },
+        "answer35": {
+            "uid": "user2",
+            "qid": "question16",
+            "userAnswer": "D"
+        },
+        "answer36": {
+            "uid": "user2",
+            "qid": "question18",
+            "userAnswer": "D"
+        },
+        "answer37": {
+            "uid": "user2",
+            "qid": "question19",
+            "userAnswer": "A"
+        },
+        "answer38": {
+            "uid": "user2",
+            "qid": "question2",
+            "userAnswer": "A"
+        },
+        "answer39": {
+            "uid": "user2",
+            "qid": "question5",
+            "userAnswer": "A"
+        }
+
+    }     
+    
+}
