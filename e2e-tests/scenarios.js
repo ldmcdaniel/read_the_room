@@ -5,20 +5,20 @@
 describe('my app', function() {
 
 
-  it('should automatically redirect to /view1 when location hash/fragment is empty', function() {
+  it('should automatically redirect to /profile_view when location hash/fragment is empty', function() {
     browser.get('index.html');
-    expect(browser.getLocationAbsUrl()).toMatch("/view1");
+    expect(browser.getLocationAbsUrl()).toMatch("/profile_view");
   });
 
 
-  describe('view1', function() {
+  describe('profile_view', function() {
 
     beforeEach(function() {
-      browser.get('index.html#!/view1');
+      browser.get('index.html#!/profile_view');
     });
 
 
-    it('should render view1 when user navigates to /view1', function() {
+    it('should render profile_view when user navigates to /profile_view', function() {
       expect(element.all(by.css('[ng-view] p')).first().getText()).
         toMatch(/partial for view 1/);
     });
@@ -26,14 +26,14 @@ describe('my app', function() {
   });
 
 
-  describe('view2', function() {
+  describe('group_view', function() {
 
     beforeEach(function() {
-      browser.get('index.html#!/view2');
+      browser.get('index.html#!/group_view');
     });
 
 
-    it('should render view2 when user navigates to /view2', function() {
+    it('should render group_view when user navigates to /group_view', function() {
       expect(element.all(by.css('[ng-view] p')).first().getText()).
         toMatch(/partial for view 2/);
     });
