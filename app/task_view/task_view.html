@@ -9,11 +9,11 @@
     </div>
     <div class="tile is-parent is-fullwidth" ng-repeat="task in taskList">
       <article class="tile is-child notification is-primary">
-        <p class="title">{{task.title}}</p>
-        <p class="subtitle">{{task.question}}</p>
-        <div class="content">
-          {{task.answer}}
-        </div>
+        <p class="subtitle">Ask {{task.author}} about: </p>
+        <p class="content">{{task.title}}</p>
+        <button class="button" ng-click="setComplete(task.answerID)">
+          Complete!
+        </button>
       </article>
     </div>
   </section>
