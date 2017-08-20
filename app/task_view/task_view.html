@@ -1,17 +1,20 @@
 <div ng-controller="TaskCtrl">
   <section class="section is-primary">
     <div class="container">
-      <h1 class="title">Your Tasks</h1>
+      <h1 class="title">{{user.name}}'s Tasks</h1>
       <h2 class="subtitle">
         Check it out! Tasks! Get to <em>breaking that
         <strong>ICE</strong></em>
       </h2>
     </div>
-    <div class="tile is-parent is-fullwidth" ng-repeat="task in taskList">
-      <article class="tile is-child notification is-primary">
-        <p class="subtitle">Ask {{task.author}} about: </p>
-        <p class="content">{{task.title}}</p>
-        <button class="button" ng-click="setComplete(task.answerID)">
+    <div class="tile is-parent is-fullwidth" ng-repeat="task in
+                                                taskList">
+      <article id="{{task.title}}"
+               class="tile is-child notification is-primary">
+        <p class="content">{{task.title}} ... My answer was
+                           {{task.myAnswer}}</p>
+        <p class="subtitle">Ask {{task.author}} about their answer! </p>
+        <button class="button" ng-click="setComplete(task.title)">
           Complete!
         </button>
       </article>
