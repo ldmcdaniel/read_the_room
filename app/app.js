@@ -24,5 +24,4 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
     storageBucket: creds.storageBucket,
     messagingSenderId: creds.messagingSenderId
   };
-  firebase.initializeApp(authConfig);
 }]);
