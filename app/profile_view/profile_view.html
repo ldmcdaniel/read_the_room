@@ -13,7 +13,9 @@
       </div>
       <div class="column profile-task-area">
       	<div ng-show="askingQuestions === 'answering'">
-      		<p>Questions are here</p>
+      		<!-- <p>Questions are here</p> -->
+      		<div class="column profile-task-area"
+      		     ng-include="'../task_view/task_view.html'">Questions are here</div>
       	</div>
       	<div ng-show="askingQuestions === 'asking'">
 	      	<div class="col-sm-2">
@@ -34,8 +36,7 @@
 	        <button id="question-submit" ng-click="pts()" class="button is-inverted">Submit Question</button>
       	</div>
       </div>
-      <div class="column profile-task-area"
-           ng-include="'../task_view/task_view.html'">Questions are here</div>
+
     </div>
   </div>
 </section>
