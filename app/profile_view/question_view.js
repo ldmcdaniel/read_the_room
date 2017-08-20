@@ -18,7 +18,7 @@ angular.module('myApp.QuestionView', ['ngRoute'])
 
   $scope.pts = function(){
     $scope.profile.askPoints += 1;
-    console.log($scope.profile.askPoints);
+    // console.log($scope.profile.askPoints);
   };
   // console.log("what's scope", mypoints);
 }]);
