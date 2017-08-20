@@ -30,6 +30,18 @@ section{
 .navbar-brand img{
   height: 50px;
 }
+/* 
+.column.profile-task-area{
+  width: 700px;
+} */
+
+input[type="text"] {
+  width: 450px;
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
 
 .dropDown{
   margin-top: 13px;
