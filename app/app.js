@@ -6,7 +6,7 @@ var app = angular.module('myApp', [
   'myApp.ProfileView',
   'myApp.GroupView',
   'myApp.TaskView',
-  'myApp.version'
+  'myApp.version',
   'myApp.QuestionView',
   'myApp.version',
 ]).
@@ -15,7 +15,7 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
 
   $routeProvider.otherwise({redirectTo: '/profile_view'});
 }])
-.run(function($location, FIREBASE_CONFIG) {
+.run(['$location', 'FIREBASE_CONFIG', function($location, FIREBASE_CONFIG) {
   let creds = FIREBASE_CONFIG;
   let authConfig = {
     apiKey: creds.apiKey,
@@ -25,5 +25,4 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
     messagingSenderId: creds.messagingSenderId
   };
   firebase.initializeApp(authConfig);
-});
 }]);
