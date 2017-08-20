@@ -11,11 +11,10 @@
       	<button class="button is-inverted" ng-click="toggleQuestionView()" ng-show="askingQuestions === 'answering'">Ask a Question</button>
       	<button class="button is-inverted" ng-click="toggleQuestionView()" ng-show="askingQuestions === 'asking'">Answer a Question</button>
       </div>
-      <div class="column profile-task-area">
-      	<div ng-show="askingQuestions === 'answering'">
-      		<!-- <p>Questions are here</p> -->
-      		<div class="column profile-task-area"
-      		     ng-include="'../task_view/task_view.html'">Questions are here</div>
+      <div class="column profile-task-area is-two-thirds">
+      	<div ng-show="askingQuestions === 'answering'"
+						 class="column profile-task-area"
+      		     ng-include="'../task_view/task_view.html'">
       	</div>
       	<div ng-show="askingQuestions === 'asking'">
 	      	<div class="col-sm-2">
@@ -36,7 +35,6 @@
 	        <button id="question-submit" ng-click="pts()" class="button is-inverted">Submit Question</button>
       	</div>
       </div>
-
     </div>
   </div>
 </section>
