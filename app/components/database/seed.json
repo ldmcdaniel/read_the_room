@@ -21,7 +21,7 @@
         "user2": {
             "uid": "user2",
             "name": "Joe",
-            "avatar": "../assets/user1.jpg",
+            "avatar": "../assets/user2.jpg",
             "group": "sample",
             "answerPoints": 15, 
             "askPoints": 5,
