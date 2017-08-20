@@ -1,1 +1,20 @@
-<p>Groups View Goes here</p>
+<div ng-controller="TaskCtrl">
+  <section class="section is-primary">
+    <div class="container">
+      <h1 class="title">Your Tasks</h1>
+      <h2 class="subtitle">
+        Check it out! Tasks! Get to <em>breaking that
+        <strong>ICE</strong></em>
+      </h2>
+    </div>
+    <div class="tile is-parent is-fullwidth" ng-repeat="task in taskList">
+      <article class="tile is-child notification is-primary">
+        <p class="title">{{task.title}}</p>
+        <p class="subtitle">{{task.question}}</p>
+        <div class="content">
+          {{task.answer}}
+        </div>
+      </article>
+    </div>
+  </section>
+</div>
