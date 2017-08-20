@@ -5,11 +5,24 @@ var app = angular.module('myApp', [
   'ngRoute',
   'myApp.ProfileView',
   'myApp.GroupView',
+  'myApp.TaskView',
+  'myApp.version',
   'myApp.QuestionView',
   'myApp.version',
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
 
-  // $routeProvider.otherwise({redirectTo: '/profile_view'});
+  $routeProvider.otherwise({redirectTo: '/profile_view'});
+}])
+.run(['$location', 'FIREBASE_CONFIG', function($location, FIREBASE_CONFIG) {
+  let creds = FIREBASE_CONFIG;
+  let authConfig = {
+    apiKey: creds.apiKey,
+    authDomain: creds.authDomain,
+    databaseURL: creds.databaseURL,
+    storageBucket: creds.storageBucket,
+    messagingSenderId: creds.messagingSenderId
+  };
+  firebase.initializeApp(authConfig);
 }]);
