@@ -8,10 +8,33 @@
         <h3 class = "subtitle is-3 has-text-light">Group: {{profile.group}}</h3>
         <h3 class="subtitle is-6 has-text-light">Questions Asked Points: <span class = "{{profile.status}}">{{profile.askPoints}}</span></h3>
         <h3 class="subtitle is-6 has-text-light">Questions Answered Points: <span class = "{{profile.status}}">{{profile.answerPoints}}</span></h3>
-      	<button class="button is-inverted">Create Question</button>
+      	<button class="button is-inverted" ng-click="toggleQuestionView()" ng-show="askingQuestions === 'answering'">Ask a Question</button>
+      	<button class="button is-inverted" ng-click="toggleQuestionView()" ng-show="askingQuestions === 'asking'">Answer a Question</button>
       </div>
-      <div class="column profile-task-area is-two-thirds"
-           ng-include="'../task_view/task_view.html'">Questions are here</div>
+      <div class="column profile-task-area is-two-thirds">
+      	<div ng-show="askingQuestions === 'answering'"
+						 class="column profile-task-area"
+      		     ng-include="'../task_view/task_view.html'">
+      	</div>
+      	<div ng-show="askingQuestions === 'asking'">
+	      	<div class="col-sm-2">
+	          <input type="text" ng-model="Users.question" class="" id="question" placeholder="Your question here"/>
+	        </div>
+	        <div class="col-sm-2">
+	          <input type="text" ng-model="Users.answer" class="" id="answer" placeholder="Your correct answer to this question here"/>
+	        </div>
+	        <div class="col-sm-2">
+	          <input type="text" ng-model="Users.answer" class="" id="answer" placeholder="A wrong answer to this question here"/>
+	        </div>
+	        <div class="col-sm-2">
+	          <input type="text" ng-model="Users.answer" class="" id="answer" placeholder="Another wrong answer here"/>
+	        </div>
+	        <div class="col-sm-2">
+	          <input type="text" ng-model="Users.answer" class="" id="answer" placeholder="Another wrong answer here"/>
+	        </div>
+	        <button id="question-submit" ng-click="pts()" class="button is-inverted">Submit Question</button>
+      	</div>
+      </div>
     </div>
   </div>
 </section>

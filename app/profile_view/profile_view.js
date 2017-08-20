@@ -8,10 +8,38 @@ angular.module('myApp.ProfileView', ['ngRoute'])
     controller: 'ProfileCtrl'
   });
 }])
+
 .controller('ProfileCtrl', ['$scope', '$http', function($scope, $http) {
-	$http.get ('https://readtheroom-6b306.firebaseio.com/users/user0.json')
+  $scope.askingQuestions = 'answering';
+  
+var user = document.getElementById("users");
+
+    user.addEventListener("change", function(){
+        // console.log(user.value);
+	$http.get (`https://readtheroom-6b306.firebaseio.com/users/${user.value}.json`)
 	.then ((userObj) => {
 	$scope.profile = userObj.data;
-	})
+  })
+    });
+
+  // console.log(user.value);
+	$http.get (`https://readtheroom-6b306.firebaseio.com/users/${user.value}.json`)
+	.then ((userObj) => {
+	$scope.profile = userObj.data;
+  })
+  
+
+	$scope.toggleQuestionView = () => {
+		if ($scope.askingQuestions === 'asking') {
+			$scope.askingQuestions = 'answering';
+		}	else if ($scope.askingQuestions === 'answering') {
+			$scope.askingQuestions = 'asking';
+		}
+	};
+
+	$scope.pts = () => {
+		$scope.profile.askPoints += 1;
+	};
+
 
 }]);
